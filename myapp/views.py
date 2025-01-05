@@ -2,7 +2,18 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def home(request):
-    return render (request, template_name="mytemp/home.html")
+    table_heading = "Student Information"
+    people_info = [
+        {"first": "Jon", "last": "harris", "address": "KTM"},
+        {"first": "Jane", "last": "Bolton", "address": "PKR"},
+        {"first": "Ken", "last": "", "address": "BKT"},
+        {"first": "Harry", "last": "Wayne", "address": "KTM"},
+        
+]
+    
+ 
+    
+    return render (request, template_name="myapp/home.html", context={"heading": table_heading, "infos":people_info})
 
 def test(request):
     return HttpResponse("Hello World")

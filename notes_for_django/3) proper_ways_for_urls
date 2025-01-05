@@ -12,3 +12,6 @@ Proper Ways for creating URLS
 3. It is better not to use ids in the URL
     http://127.0.0.1:8000/students/jon/  (Do)
     http://127.0.0.1:8000/students/2/   (Don't)
+
+
+    
