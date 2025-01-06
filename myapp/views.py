@@ -7,22 +7,16 @@ def home(request):
         {"first": "Jon", "last": "harris", "address": "KTM"},
         {"first": "Jane", "last": "Bolton", "address": "PKR"},
         {"first": "Ken", "last": "", "address": "BKT"},
-        {"first": "Harry", "last": "Wayne", "address": "KTM"},
-        
+        {"first": "Harry", "last": "Wayne", "address": "KTM"},     
 ]
-    
- 
-    
     return render (request, template_name="myapp/home.html", context={"heading": table_heading, "infos":people_info})
 
 def test(request):
     return HttpResponse("Hello World")
 
 def python(request):
-    name = request.GET.get("name")
-    print(name)
-    return HttpResponse("<h1>I'am Learning Python</h1>")
-
+     return render (request, template_name="myapp/python.html")
+   
 # def home(request):
 #     content = """
 #     <h1>Hello World</h1>
@@ -43,3 +37,7 @@ def name(request):
 
 def temp1(request):
     return render (request, template_name="mytemp/temp1.html")
+
+
+def portfolio(request):
+    return render (request, template_name="myapp/portfolio.html")
