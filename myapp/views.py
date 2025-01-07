@@ -41,3 +41,7 @@ def temp1(request):
 
 def portfolio(request):
     return render (request, template_name="myapp/portfolio.html")
+
+
+def login(request):
+    return render (request, template_name="myapp/login.html")
