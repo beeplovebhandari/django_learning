@@ -45,3 +45,6 @@ def portfolio(request):
 
 def login(request):
     return render (request, template_name="myapp/login.html")
+
+def test1(request):
+    return HttpResponse("Hello ")
