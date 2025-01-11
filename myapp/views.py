@@ -36,8 +36,7 @@ def name(request):
 
 
 def temp1(request):
-    return render (request, template_name="mytemp/temp1.html")
-
+    return HttpResponse("I'am test temp from views ")
 
 def portfolio(request):
     return render (request, template_name="myapp/portfolio.html")
