@@ -6,3 +6,7 @@ from.models import Students
 def student(request):
     students = Students.objects.all()
     return render (request , template_name = "tables/student.html", context={"students": students})
+
+
+def classroom(request):
+    pass
