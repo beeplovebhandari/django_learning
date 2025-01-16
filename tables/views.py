@@ -1,12 +1,11 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-
-from.models import Students
+from.models import Student
 
 def student(request):
-    students = Students.objects.all()
+    students = Student.objects.all()
     return render (request , template_name = "tables/student.html", context={"students": students})
 
 
 def classroom(request):
-    pass
+    return HttpResponse("<h1> Hello World </h1>")
