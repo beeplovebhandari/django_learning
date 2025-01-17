@@ -35,8 +35,11 @@ clear garna chai = cls
 
 back jana chai = cd ..
 
-** app banauna chai 
-   python manage.py statrtapp <appname>      ***
+    ** 
+    app banauna chai 
+    python manage.py statrtapp <appname>     
+   
+    ***
 
 
 
