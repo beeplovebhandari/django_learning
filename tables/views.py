@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from django.http import HttpResponse
-from.models import Student
+from.models import Student, Item
 
 def student(request):
     students = Student.objects.all()
@@ -9,3 +9,6 @@ def student(request):
 
 def classroom(request):
     return HttpResponse("<h1> Hello World </h1>")
+
+def item(request):
+    pass
