@@ -10,5 +10,9 @@ def student(request):
 def classroom(request):
     return HttpResponse("<h1> Hello World </h1>")
 
+
 def item(request):
-    pass
+    a = Item.objects.all()
+    return render (request, template_name="tables/items.html", context={"items":a})
+
+

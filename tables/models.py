@@ -17,4 +17,11 @@ class Student(models.Model):
         return self.name
     
 class Item(models.Model):
-    pass
+    item_name = models.CharField(max_length=20)
+    company = models.CharField(max_length=20)
+    mfd = models.DateField()
+    best_before = models.DateField()
+    description = models.TextField()
+
+    def __str__(self):
+        return self.item_name
