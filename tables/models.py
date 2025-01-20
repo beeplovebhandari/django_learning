@@ -15,6 +15,8 @@ class Student(models.Model):
     
     def __str__(self):
         return self.name
+ 
+
     
 class Item(models.Model):
     item_name = models.CharField(max_length=20)
